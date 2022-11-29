@@ -1,0 +1,43 @@
+.parent{
+    background-color: blue;
+    padding: 10px;
+    display: flex;
+    height: 60vh;
+    align-items: center;
+
+    /*flex*/   
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+body{
+    font-size: 40px;
+    margin: 0;
+}
+.parent > div{
+    background-color: grey;
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    
+    /*flexbox*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent > div:nth-child(odd){
+    background: red
+    ;
+}
+.item4{
+    align-self: flex-start;
+}
+.item6{
+    align-self: flex-end;
+}
+.item7{
+order: 1;
+}
+.item1{
+    order: -1;
+}
